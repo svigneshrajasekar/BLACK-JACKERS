@@ -9,4 +9,49 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <display-name>placeBet</display-name>
+    <servlet-name>placeBet</servlet-name>
+    <servlet-class>controllers.placeBet</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>GameStateBlackJack</display-name>
+    <servlet-name>GameStateBlackJack</servlet-name>
+    <servlet-class>controllers.GameStateBlackJack</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>GameStateBusted</display-name>
+    <servlet-name>GameStateBusted</servlet-name>
+    <servlet-class>controllers.GameStateBusted</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>GameStatePush</display-name>
+    <servlet-name>GameStatePush</servlet-name>
+    <servlet-class>controllers.GameStatePush</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>GameStateWin</display-name>
+    <servlet-name>GameStateWin</servlet-name>
+    <servlet-class>controllers.GameStateWin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GameStateWin</servlet-name>
+    <url-pattern>/GameStateWin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GameStatePush</servlet-name>
+    <url-pattern>/GameStatePush</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GameStateBusted</servlet-name>
+    <url-pattern>/GameStateBusted</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GameStateBlackJack</servlet-name>
+    <url-pattern>/GameStateBlackJack</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>placeBet</servlet-name>
+    <url-pattern>/placeBet</url-pattern>
+  </servlet-mapping>
 </web-app>

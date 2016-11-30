@@ -19,12 +19,14 @@ public class BlackJack {
 	/**
 	 * 
 	 */
-	public void getGameState() {
+	public GameState getGameState() {
+		return gameState;
 	}
 
 	/**
 	 * 
 	 */
-	public void setGameState() {
+	public void setGameState(GameState gameState) {
+		this.gameState= gameState;
 	}
 };

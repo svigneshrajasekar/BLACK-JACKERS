@@ -9,4 +9,9 @@ package model;
  * 
  */
 public enum GameState {
+	PUSH,
+	BURST,
+	WIN,
+	LOSE,
+	BLACKJACK;
 };

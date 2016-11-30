@@ -22,20 +22,50 @@ public class User extends Player {
 				 */
 	public boolean isPlacedBet;
 	/**
+	 * @return the isPlacedBet
+	 */
+	public boolean isPlacedBet() {
+		return isPlacedBet;
+	}
+
+	/**
+	 * @param isPlacedBet the isPlacedBet to set
+	 */
+	public void setPlacedBet(boolean isPlacedBet) {
+		this.isPlacedBet = isPlacedBet;
+	}
+
+	/**
 	 * 
 	 */
-	public void getScore() {
+	public int getScore() {
+		return score;
 	}
 
 	/**
 	 * 
 	 */
 	public void setScore() {
+		
 	}
 
 	/**
 	 * 
 	 */
-	public void placeBet() {
+	public void setBalance(int balance) {
+		this.balance = balance;
+		
 	}
+	
+	public int getBalance() {
+		return balance;
+		
+		
+	}
+	public int placeBet(int bet, int balances) {
+		balances = balances - bet;
+		return balances;
+	}
+
+	
 };
